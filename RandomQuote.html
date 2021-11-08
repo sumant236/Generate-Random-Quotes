@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Henny+Penny&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: #000;
+        }
+        #container{
+            background: #181515;
+            max-width: 40%;
+            padding: 50px;
+            min-height: 30%;
+            margin: 80px auto;
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+        h2{
+            color: #607D8B;
+            font-size: 40px;
+            font-family: 'Dancing Script', cursive;
+        }
+        h4{
+            float: right;
+            color: #fff;
+            font-size: 25px;
+            font-family: 'Caveat', cursive;
+            margin: 0;
+        }
+        button{
+            border: none;
+            background: #1A237E;
+            color: #fff;
+            padding: 10px;
+            width: 10%;
+            margin: 100px;
+            margin-bottom: 0;
+            float: right;
+            font-family: 'Henny Penny', cursive;
+            cursor: pointer;
+        }
+        .clear{
+            clear: both;
+        }
+        #loading{
+            color: #607D8B;
+        }
+        .visible{
+            display: block;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <button id="btn">New Quote</button>
+        <div class="clear"></div>
+        <div id="container"><div id="loading" class="hidden">...Loading</div></div>
+    </form>
+    <script src="./RandomQuote.js"></script>
+</body>
+</html>
